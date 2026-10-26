@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const requiredVars = ['MONGO_DB_URI', 'GOOGLE_CLIENT_ID', 'GOOGLE_GEMINI_API_KEY'];
+const requiredVars = ['MONGO_DB_URI', 'GOOGLE_CLIENT_ID', 'GOOGLE_GEMINI_API_KEY', 'DEFAULT_CHARACTER_ID'];
 const missing = requiredVars.filter((key) => !process.env[key]);
 
 if (missing.length) {
@@ -19,4 +19,5 @@ module.exports = {
   mongoDbUri: process.env.MONGO_DB_URI,
   googleClientId: process.env.GOOGLE_CLIENT_ID,
   googleGeminiApiKey: process.env.GOOGLE_GEMINI_API_KEY,
+  defaultCharacterId: process.env.DEFAULT_CHARACTER_ID
 };
