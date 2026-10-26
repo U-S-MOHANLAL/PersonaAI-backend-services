@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
-const { port, baseUrl, defaultCharacterId } = require("./config");
+const { port } = require("./config");
+const baseUrl = process.env.BASE_URL;
+const defaultCharacterId = process.env.DEFAULT_CHARACTER_ID;
+
 
 app.use(
   express.json({
