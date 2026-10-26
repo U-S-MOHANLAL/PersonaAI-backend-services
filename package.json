@@ -1,4 +1,6 @@
 {
+  "version": "1.0.0",
+  "name": "persona-ai-backend-services",
   "scripts": {
     "dev": "node ./index.js",
     "start": "node ./index.js"
